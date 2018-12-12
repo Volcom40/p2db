@@ -1,0 +1,8 @@
+.logo {
+    max-width: center;
+    height: 700px;
+    background-position:50% 50%;
+    background-image:url(./../img/favicon_little.png);
+    background-repeat:no-repeat;
+    
+}

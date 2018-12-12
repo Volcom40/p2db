@@ -1,0 +1,10 @@
+.modal-header {
+    background-color: rgba(138, 91, 129, 0.424);;
+    padding: 16px 16px;
+    color: #80898e;
+    border-bottom:2px dashed #f8f9fa;
+ }
+.modal-boder {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

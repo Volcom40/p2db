@@ -1,0 +1,50 @@
+<div class="modal fade param-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content ">
+            <div class="modal-header bgcolor border-dark text-white">
+                    <fieldset>
+
+                        <!-- Form Name -->
+                        <legend class="fsize mx-auto ">Assistant gestion mot de passe</legend>
+            </div>
+            <form method="POST" action="../php/change_pass.php">
+            <!-- Password input-->
+            <div class="form-group">
+                <label class="col-md-8 control-label" for="password"></label>
+                <div class="col-md-8">
+                    <input id="password" name="password" type="password" placeholder="Ancien mot de passe" class="form-control input-md" required>
+
+                </div>
+            </div>
+
+            <!-- My new Password input -->
+            <div class="form-group">
+                <label class="col-md-8 control-label" for="password1"></label>
+                <div class="col-md-8">
+                    <input id="password1" name="password1" type="password" placeholder="Nouveau mot de passe" class="form-control input-md" required>
+
+                </div>
+            </div>
+
+            <!-- check my Password input-->
+            <div class="form-group">
+                <label class="col-md-8 control-label" for="password2"></label>
+                <div class="col-md-8">
+                    <input id="password2" name="password2" type="password" placeholder="Répéter mot de passe" class="form-control input-md" required>
+
+                </div>
+            </div>
+
+            <!-- Button check -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="validermdp"></label>
+                <div class="col-md-4">
+                    <button class="btn btn-secondary btn-lg bgcolor border-dark ">Valider</button>
+                </div>
+            </div>
+          </form>
+            </fieldset>
+            </form>
+        </div>
+    </div>
+</div>

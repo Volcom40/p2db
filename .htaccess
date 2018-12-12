@@ -1,0 +1,12 @@
+ErrorDocument 400 /error/error400.php
+ErrorDocument 401 /error/error401.php
+ErrorDocument 403 /error/error403.php
+ErrorDocument 404 /error/error404.php
+ErrorDocument 405 /error/error405.php
+ErrorDocument 500 /error/error500.php
+ErrorDocument 501 /error/error501.php
+ErrorDocument 502 /error/error502.php
+ErrorDocument 503 /error/error503.php
+ErrorDocument 504 /error/error504.php
+ErrorDocument 505 /error/error505.php
+FallbackResource /error/error404.php

@@ -1,0 +1,255 @@
+<form action="../php/confirmation_client.php" method="POST">
+  <div class="container border bg-light p-2">
+    <div class="container">
+        <div class="col-lg-12 text-center bgcolor rounded my-2 mb-3">
+           <h3>Etat Civil</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="form-group">
+                    <select class="form-control" id="Select1" name="Psexe">
+                        <option>Monsieur</option>
+                        <option>Madame</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="col-lg-4 ">
+                <input type="text" class="form-control" id="" placeholder="Nom" name="Pnom">
+            </div>
+            <div class="col-lg-4">
+                <input type="text" class="form-control" id="" placeholder="Prénom" name="Pprenom">
+            </div>
+            </div>
+        </div>
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-2 ">
+                <div class="form-group">Situation familiale
+
+                </div>
+
+            </div>
+            <div class="col-lg-4 ">
+            <div class="form-group">
+                    <select class="form-control" id="Select2" name='PsituationF'>
+                    <option>Célibataire</option>
+                    <option>Marié(e)</option>
+                    <option>veuf(ve)</option>
+                    <option>En concubinage</option>
+                    <option>Ne veut pas le spécifier </option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-lg-5 ">
+            <input type="number" class="form-control" id="" placeholder="Numéro de Famille/ Groupe" name="Pfamille">
+            </div>
+            </div>
+        </div>
+         <!-- *****************************************  -->
+    <div class="container">
+        <div class="col-lg-12 text-center bgcolor rounded my-2 mb-3">
+            <h3>Informations De Contact</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 ">
+                    <input type="text" class="form-control" id="" placeholder="Adresse" name="Padresse">
+                </div>
+                <div class="col-lg-4 ">
+                    <input type="text" class="form-control" id="" placeholder="Code Postal" name="Vcodep">
+                </div>
+                <div class="col-lg-4 ">
+                    <input type="text" class="form-control" id="" placeholder="Commune/Ville" name="Vcommune">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 ">
+                </div>
+                <div class="col-lg-4 ">
+                <input type="text" class="form-control" id="" placeholder="Numéro de téléphone" name="Pphone" maxlength="10">
+                </div>
+                <div class="col-lg-4 ">
+                <input type="mail" class="form-control" id="" placeholder="Email" name="Pmail">
+                </div>
+                <div class="col-lg-2 ">
+                </div>
+            </div>
+        </div>
+        <div class="container my-3">
+            <div class="row">
+                <div class="col-lg-4 ">
+                </div>
+                <div class="col-lg-4 ">
+                <input type="text" class="form-control" id="" placeholder="Profession/ Nom de l'entreprise" name="Pentreprise">
+                </div>
+                <div class="col-lg-4 ">
+                </div>
+            </div>
+        </div>
+        <!-- *****************************************  -->
+        <div class="container">
+        <div class="col-lg-12 text-center bgcolor rounded my-2 mb-3">
+            <h3>Heure des repas</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 ">
+                </div>
+                <div class="col-lg-1 text-center">
+                Matin
+                </div>
+                <div class="col-lg-2 ">
+                </div>
+                <div class="col-lg-1 text-center">
+                Soir
+                </div>
+                <div class="col-lg-4 ">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 ">
+                </div>
+                <div class="col-lg-1 text-center">
+                <input type="time" id="hdejeuner" value="08:00" placeholder="Heure du petit déjeuner..." name="hpetitdejeuner"><br>
+                </div>
+                <div class="col-lg-2 ">
+                </div>
+                <div class="col-lg-1 text-center">
+                <input type="time" id="hdiner" value="19:00" placeholder="Heure  du diner..." name="Pdiner"><br>
+                </div>
+                <div class="col-lg-4 ">
+                </div>
+            </div>
+            <div class="row">
+            <div class="col-lg-2">
+                </div>
+                <div class="col-lg-4">
+                   <p> Régime Alimentaire </p>
+                </div>
+                <div class="col-lg-4 text-center">
+                <div class="form-group">
+                    <select class="form-control" id="Select2" name="regime">
+                    <option>Aucun</option>
+                    <option>Végétarien</option>
+                    <option>Sans porc</option>
+                    <option>Sans Gluten</option>
+                    <option>Sans Sel</option>
+                    </select>
+                </div>
+                <div class="col-lg-4">
+                </div>
+            </div>
+                </div class="row">
+                <div>
+                <div class="col ">
+                <div class="form-group">
+                        <label for="comment">Mes préférences alimentaires, j'aime j'aime pas :</label>
+                        <textarea class="form-control" rows="5" id="comment" name="aimeaimepas"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- *****************************************  -->
+        <div class="container">
+        <div class="col-lg-12 text-center bgcolor my-2 mb-3 rounded">
+            <h3>Prospect</h3>
+            </div><br>
+            <div class="row">
+
+                <div class="col-lg-1 ">
+                </div>
+                <div class="col-lg-5 ">
+                <input type="text" class="form-control" id="" placeholder="Comment avez vous connu notre établissement ?" name="Poriginevenue">
+                </div>
+                <div class="col-lg-5 ">
+                <input type="text" class="form-control" id="" placeholder="Raison de votre venue" name="Praisonvenue">
+                </div>
+                <div class="col-lg-1 ">
+                </div>
+            </div>
+        </div>
+        <!--************************************************-->
+        <br>
+        <div class="container">
+        <div class="col-lg-12 text-center bgcolor my-2 mb-3 rounded">
+            <h3>Location</h3>
+            </div><br>
+            <div class="row">
+
+                <div class="col-lg-1 ">
+                </div>
+                <div class="col-lg-5 ">
+                <label>Date d'arrivée</label>
+                <input type="date" class="form-control" name="Datearriver">
+                </div>
+                <div class="col-lg-5 ">
+                <label>Date de départ</label>
+                <input type="date" class="form-control" name="Datedepart">
+                </div>
+                <div class="col-lg-1 ">
+                </div>
+            </div><br>
+            <div class="row">
+            <div class="col-lg-3 ">
+                </div>
+                <div class="col-lg-6 ">
+                        <div class="form-group">
+                        <label for="comment">Attentes particulières :</label>
+                        <textarea class="form-control" rows="5" id="comment" name="Attentes"></textarea>
+                        </div>
+                </div>
+                <div class="col-lg-3 ">
+                </div>
+                </div>
+            </div>
+        <br>
+         <!-- *****************************************  -->
+         <div class="container">
+            <div class="col-lg-12 text-center bgcolor my-2 mb-3 rounded">
+            <h3>Intérêts</h3>
+            </div>
+            <div class="row">
+
+                <div class="col-lg-6">
+                <div class="form-group">
+                        <label for="comment">Mes Loisirs / Passions :</label>
+                        <textarea class="form-control" rows="5" id="comment" name="Ploisir"></textarea>
+                        </div>
+                </div>
+                <div class="col-lg-6 ">
+                        <div class="form-group">
+                        <label for="comment">Mes Goûts :</label>
+                        <textarea class="form-control" rows="5" id="comment" name="Pgout"></textarea>
+                        </div>
+                </div>
+
+            </div>
+            <div class="row">
+            <div class="col-lg-12 text-center my-2 mb-3">
+            <div class="form-group">
+                        <label for="comment">Les activités dejà effectuées :</label>
+                        <textarea class="form-control" rows="5" id="comment" name="Pactivite"></textarea>
+            </div>
+
+            </div>
+            <div class="col-lg-9">
+            <div class="radio">
+                <label><input type="radio" value="active" name="optradio" value="stock_on" required>  Le client est informé que ses données personnelles seront conservées pendant 5 ans.</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio" value="stock_off" required>  En cochant cette case, elles seront conservées un mois. </label>
+            </div>
+        </div>
+            <div class="col-lg-3">
+                <input type="hidden" name="type" value="1"> <!-- le type permet de sélectionner si ajout, modif ou del -->
+                <input type="hidden" name="enfant" value="false">
+                <button class="btn btn-secondary btn-lg bgcolor border-dark">Envoyer</button>
+            </div>
+        </div>
+    </div>
+    <br>
+</div>
+</form>
+<br>

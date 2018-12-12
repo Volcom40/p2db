@@ -1,0 +1,66 @@
+<!-- Modal -->
+<div class="modal fade" id="modifier_materiel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bgcolor border-dark text-white">
+        <h5 class="modal-title fsize mx-auto" id="exampleModalLabel">Modification matériel</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form class="modal-body" action="./../php/switchcase_materiel.php" method="POST">
+        <input type="hidden" name="etat" value=2>
+        <input type="hidden" id="Mid" name="id" value="">
+        <div class="modal-body">
+
+          <div class="form-group">
+            <label for="exampleFormControlInput2">Nom Du Matériel</label>
+            <input type="text" class="form-control" id="Mnom_materiel" name="nom_materiel" value="" required>
+          </div>
+          <div class="form-group">
+            <label for="select_creation">Disponibilité Du Matériel</label>
+            <select class="form-control" id="Metat_materiel" name="etat_materiel" value="" required>
+              <option value="0">Disponible</option>
+              <option value="1">Hors Service</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="select_creation_type">Type De Matériel</label>
+            <select class="form-control" id="Mtype_materiel" name="type_materiel" value="" required>
+              <option value="1">Matériel Extérieur</option>
+              <option value="2">Matériel Logement</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Descriptif</label>
+            <textarea class="form-control" id="Mdescriptif_materiel" name="descriptif_materiel" value="" rows="3" placeholder="....."></textarea>
+          </div>
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary buble" data-dismiss="modal">Annuler</button>
+          <button type="input" class="btn btn-secondary btn-lg bgcolor border-dark">Valider les changements</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+<script>
+
+  function setSelectedIndex(s, valsearch) {
+    // Loop through all the items in drop down list
+    for (i = 0; i < s.options.length; i++) {
+      if (s.options[i].value == valsearch) {
+        // Item is found. Set its property and exit
+        s.options[i].selected = true;
+        break;
+      }
+    }
+    return;
+  }
+
+  setSelectedIndex(document.getElementById("ddl_example5"), "3");
+
+</script>

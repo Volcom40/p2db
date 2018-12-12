@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="../css/modal.css" type="text/css" media="screen" />
+<div class="modal fade " id="modalLook_enfant" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-border " role="document">
+    <div class="modal-content">
+      <div class="modal-header bgcolor border-dark text-white">
+        <h2 class="modal-title titre" id="exampleModalLongTitle "></h2>
+        <div class="col-lg-2"></div>
+        <span class="fsize mx-auto">Visuel Client</span>
+        <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row" id="info_enfant">
+            <!--Ligne contenant les informations civils et prospect du client -->
+            <div class="col-lg-6">
+              <h3>Données civiles</h3>
+              Nom :
+              <span id="Lnom_enfant"></span>
+              <br>
+              Prénom :
+              <span id="Lprenom_enfant"></span>
+              <br>
+              Id famille / groupe :
+              <span id="Lgroupe_enfant"></span>
+              <br>
+              <br>
+              <br>
+              <h3>Informations personnalisées </h3>
+              <br> Heure petit déjeuner :
+              <span id="Lhpetitdej_enfant"> </span>
+              <br> Heure diner :
+              <span id="Lhdiner_enfant"> </span>
+              <br> Aime / Aime pas :
+              <span id="Laime_enfant"> </span>
+              <br>
+              <br> Régime alimentaire : <span id="Lregime_enfant"> </span>
+
+            </div>
+            <div class="col-lg-6 border-left">
+              <h3>Intérêts</h3>
+              Goûts :
+              <span id="Lgouts_enfant"> </span>
+              <br>
+              Loisirs / Passions:
+              <span id="Lloisirs_enfant"> </span>
+              <br><br>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer ">
+        <button type="button" class="btn btn-secondary btn-lg bgcolor border-dark export_client_enfant">Imprimer le client</button>
+        <button type="button" class="btn btn-secondary btn-lg bgcolor border-dark  " data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>

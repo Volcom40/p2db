@@ -1,0 +1,74 @@
+<!-- modal qui s'ouvre en cliquant sur l'oeil dans les options de la page activité,
+cet onglet permettra de modifier tous les éléments qui concernent l'activité en question  -->
+<link rel="stylesheet" href="../css/modal.css" type="text/css" media="screen" />
+<div class="modal fade" id="modal_modif" tabindex="-1" role="dialog" aria-labelledby="modal_modif" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-border" role="document">
+    <div class="modal-content">
+      <input type="hidden" name="etat" value="4">
+      <div class="modal-header bgcolor border-dark text-white">
+        <div class="col-lg-2"></div>
+        <h5 class="fsize mx-auto" id="modal_modif">Modification d'une activité</h5>
+        <button type="button" class="close" data-dismiss="modal2" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form action="./../php/deletetypeactbyid.php" method="POST">
+        <!-- on attribue une valeur état pour différencier les modals -->
+        <input type="hidden" name="type" value="4">
+        <input type="hidden" id="Mid" name="id" value="">
+        <div class="modal-body ">
+          <div class="row">
+            <div class="col-12">
+              <div class="col-7">
+                  
+                <label for="example-text-input" class="col-form-label">Activité</label>
+                <input class="form-control" name="nom_activite" type="text" placeholder="Nom de l'activité" value="" id="Mnom_activite" placeholder="Champ non spécifié">
+              </div>
+              <div class="col-7">
+                <label for="tel" class="col-form-label"> Numéro de téléphone</label>
+                <input class="form-control" type="text" id="Mtel_activite" name="tel_activite" value="" maxlength="20" laceholder="Champ non spécifié">
+              </div> <br>
+            </div>
+          </div>
+          <div class="row">
+            
+              <div class="col-6">
+                <label for="tel" class="col-form-label"> Adresse</label>
+                <input class="form-control" type="text" value="" id="Madresse_activite" name="adresse_activite" placeholder="Champ non spécifié">
+              </div> 
+              <div class="col-6">
+                <label for="tel" class="col-form-label"> Ville</label>
+                <input class="form-control" type="text" value="" id="Mville_activite" name="ville_activite" placeholder="Champ non spécifié">
+              </div> 
+            
+          </div>
+          <div class="row">
+              <div class="col-6 ">
+                <label for="example-email-input" class=" col-form-label">Email</label>
+                <input class="form-control" type="email" value="" id="Mmail_activite" name="mail_activite" placeholder="Champ non spécifié">
+              </div>
+              <div class="col-6 ">
+                <label for="example-url-input" class=" col-form-label">URL</label>
+                <input class="form-control" type="url" value="" id="Murl_activite" name="url_activite" placeholder="Champ non spécifié">
+              </div>
+            
+          </div>
+        </div>
+<br>
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-10">
+            <label for="descriptif_activite col-6">Descriptif de l'activité</label>
+            <textarea class="form-control" id="Mdescriptif_activite" rows="3" name="descriptif_activite" placeholder="Champ non spécifié"></textarea>
+          </div>
+        </div>
+<br>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary buble  " data-dismiss="modal">Fermer</button>
+          <button type="submit" class="btn btn-secondary btn-lg bgcolor border-dark  ">Valider la modification </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
